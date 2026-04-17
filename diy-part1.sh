@@ -20,3 +20,6 @@
 #sed -i '$a src-git helloworld https://github.com/P3TERX/helloworld' feeds.conf.default
 
 #echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+
+sed -i 's/luci-app-ttyd//g' target/linux/mediatek/Makefile
+sed -i 's/+luci-app-ttyd//g' package/mtk/applications/luci-app-turboacc-mtk/Makefil
